@@ -1675,7 +1675,68 @@
           top: calc(100% - 12rem);
         }
         /* scroll top ends */
-      
+      /* الزرار الأساسي */
+.home .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 25px;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+  margin-top: 20px;
+}
+
+.home .btn i {
+  margin-left: 8px;
+  font-size: 1.2rem;
+}
+
+/* تأثير الهوفر */
+.home .btn:hover {
+  background: linear-gradient(to right, var(--secondary), var(--primary));
+  transform: translateY(-3px);
+}
+
+/* ترتيب خاص للموبايل */
+@media (max-width: 768px) {
+  .home .content {
+    text-align: center;
+  }
+  .home .btn {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin: 20px auto;
+  }
+  .home .socials {
+    margin-top: 15px;
+  }
+  .home .social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+  }
+  .home .social-icons li {
+    list-style: none;
+  }
+  .home .social-icons a {
+    font-size: 1.5rem;
+    color: var(--primary);
+    transition: color 0.3s ease;
+  }
+  .home .social-icons a:hover {
+    color: var(--secondary);
+  }
+}
+
 
     </style>
 </head>
@@ -2201,6 +2262,7 @@ Love to tackle complex data challenges and build end-to-end data systems." </p>
 
 </body>
 </html>
+
 
 
 
