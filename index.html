@@ -2174,6 +2174,29 @@ Love to tackle complex data challenges and build end-to-end data systems." </p>
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
 <script src="script.js"></script>
+    <!-- Footer -->
+<footer>
+  <p>© 2025 Malak Yehya. All Rights Reserved.</p>
+</footer>
+
+<script>
+  // هنا بتحطي الكود بتاع الفورم
+  document.getElementById("contact-form").addEventListener("submit", function(e){
+    e.preventDefault();
+    let name = this.name.value;
+    let email = this.email.value;
+    let phone = this.phone.value;
+    let message = this.message.value;
+
+    let mailto = `https://mail.google.com/mail/?view=cm&fs=1&to=malakyehya@gmail.com&su=Portfolio Contact&body=Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AMessage: ${message}`;
+    window.open(mailto, "_blank");
+  });
+</script>
 
 </body>
 </html>
+
+
+</body>
+</html>
+
