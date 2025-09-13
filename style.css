@@ -804,7 +804,7 @@ header .navbar ul li a:hover {
   left: 0;
 }
 .experience .right {
-  left: 50%;
+  left: 25%;
 }
 /* arrows pointing right */
 .experience .left::before {
