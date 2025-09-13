@@ -1736,6 +1736,109 @@
     color: var(--secondary);
   }
 }
+/* experience section starts */
+.experience {
+  background: #f9f9ff;
+  min-height: 80vh;
+  padding: 4rem 2rem;
+}
+
+.experience .heading {
+  font-size: 3.5rem;
+  color: #202020;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.experience .heading span {
+  color: #6a5acd;
+}
+
+.experience .timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.experience .timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background: linear-gradient(to bottom, #6a5acd, #4fc3f7);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  border-radius: 10px;
+}
+
+.experience .container-box {
+  padding: 1.5rem 2rem;
+  position: relative;
+  background: white;
+  width: 45%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+
+.experience .container-box.left {
+  left: 0;
+}
+
+.experience .container-box.right {
+  left: 55%;
+}
+
+.experience .container-box::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  background: #6a5acd;
+  border-radius: 50%;
+  border: 3px solid white;
+  z-index: 1;
+}
+
+.experience .container-box.left::after {
+  right: -13px;
+}
+
+.experience .container-box.right::after {
+  left: -13px;
+}
+
+.experience .container-box h3 {
+  font-size: 2rem;
+  color: #6a5acd;
+  margin-bottom: 0.5rem;
+}
+
+.experience .container-box p {
+  font-size: 1.4rem;
+  color: #333;
+  font-family: "Nunito", sans-serif;
+}
+
+/* responsive design */
+@media screen and (max-width: 768px) {
+  .experience .timeline::after {
+    left: 20px;
+  }
+  .experience .container-box {
+    width: 100%;
+    left: 0 !important;
+    margin-left: 40px;
+  }
+  .experience .container-box::after {
+    left: -30px !important;
+  }
+}
+/* experience section ends */
 
 
     </style>
@@ -2257,6 +2360,7 @@ Love to tackle complex data challenges and build end-to-end data systems." </p>
 
 </body>
 </html>
+
 
 
 
